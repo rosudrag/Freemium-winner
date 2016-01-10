@@ -14,5 +14,8 @@ app.jinja_loader = webGuiLoader
 def main():
     return render_template("index.html")
 
+def RunWebServer():
+    app.run()
+
 if __name__ == "__main__":
     app.run()

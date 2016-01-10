@@ -1,0 +1,22 @@
+[INFO  - 2016-01-10T21:45:31.551Z] GhostDriver - Main - running on port 60972
+[INFO  - 2016-01-10T21:45:32.336Z] Session [792fe7b0-b7e3-11e5-a256-b5f47924b08a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-01-10T21:45:32.336Z] Session [792fe7b0-b7e3-11e5-a256-b5f47924b08a] - page.customHeaders:  - {}
+[INFO  - 2016-01-10T21:45:32.337Z] Session [792fe7b0-b7e3-11e5-a256-b5f47924b08a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-01-10T21:45:32.337Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 792fe7b0-b7e3-11e5-a256-b5f47924b08a
+[ERROR - 2016-01-10T21:45:32.879Z] Session [792fe7b0-b7e3-11e5-a256-b5f47924b08a] - page.onError - msg: Error: [$injector:modulerr] http://errors.angularjs.org/1.4.8/$injector/modulerr?p0=freemium&p1=%5B%24injector%3Anomod%5D%20http%3A%2F%2Ferrors.angularjs.org%2F1.4.8%2F%24injector%2Fnomod%3Fp0%3Dfreemium%0A%09at%20https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A24%3A198%0A%09at%20b%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A23%3A252)%0A%09at%20https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A23%3A707%0A%09at%20https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A38%3A119%0A%09at%20n%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A7%3A337)%0A%09at%20g%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A37%3A562)%0A%09at%20eb%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A41%3A250)%0A%09at%20c%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A19%3A465)%0A%09at%20yc%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A20%3A275)%0A%09at%20Zd%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A19%3A84)%0A%09at%20https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A294%3A194%0A%09at%20b%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A175%3A63)%0A%09at%20If%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A35%3A371)%0A%09at%20d%20(https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fangularjs%2F1.4.8%2Fangular.min.js%3A35%3A315)
+
+  :262 in error
+[ERROR - 2016-01-10T21:45:32.879Z] Session [792fe7b0-b7e3-11e5-a256-b5f47924b08a] - page.onError - stack:
+  (anonymous function) (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:38)
+  n (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:7)
+  g (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:37)
+  eb (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:41)
+  c (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:19)
+  yc (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:20)
+  Zd (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:19)
+  (anonymous function) (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:294)
+  b (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:175)
+  If (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:35)
+  d (https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js:35)
+
+  :262 in error
