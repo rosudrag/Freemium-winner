@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e17b9ca-3a94-4ff0-9183-dfbcf75fc36b" name="Default" comment="Added front-end skeleton - Brand link as well">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Freemium-winner.iml" afterPath="$PROJECT_DIR$/.idea/Freemium-winner.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7e17b9ca-3a94-4ff0-9183-dfbcf75fc36b" name="Default" comment="Added front-end skeleton - Brand link as well" />
     <ignored path="Freemium-winner.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
