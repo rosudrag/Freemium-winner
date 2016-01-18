@@ -8,3 +8,5 @@ class AdminConstants():
 
         self.consumer_key = data["consumer-key"]
         self.consumer_secret = data["consumer-secret"]
+        self.access_key = data["access-key"]
+        self.access_secret = data["access-secret"]

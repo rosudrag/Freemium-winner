@@ -1,4 +1,6 @@
 {
     "consumer-key": "example",
-    "consumer-secret": "example"
+    "consumer-secret": "example",
+    "access-key": "example",
+    "access-secret": "secret"
 }
