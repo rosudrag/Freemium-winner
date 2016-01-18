@@ -28,3 +28,8 @@ class TwitterHook():
         for tweet in request:
             tweets.append(tweet)
         return tweets
+
+    def search_by_query(self, query):
+        api = self.api
+        request = api.request()
+        return 1
