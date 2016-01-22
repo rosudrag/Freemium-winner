@@ -7,16 +7,17 @@ app.run(['$rootScope', '$state', '$stateParams',function ($rootScope,   $state, 
     ]
 );
 
-app.config(['$stateProvider', '$urlRouterProvider',function ($stateProvider,   $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',function ($stateProvider,$urlRouterProvider,$locationProvider) {
+            $locationProvider.html5Mode(true);
             $urlRouterProvider.otherwise('/');
             $stateProvider
                 .state("home", {
                     url: "/",
-                    templateUrl: "html/main.html"
+                    templateUrl: "template/main.html"
                 })
                 .state("ceva", {
                     url: "/ceva",
-                    templateUrl: "html/ceva.html"
+                    templateUrl: "template/ceva.html"
                 });
         }
     ]
@@ -54,6 +55,6 @@ app.controller('mainTableCtrl',function($scope){
 
 app.directive('navigation',function(){
     return{
-        templateUrl:'html/nav-bar.html'
+        templateUrl:'template/nav-bar.html'
     };
 });
