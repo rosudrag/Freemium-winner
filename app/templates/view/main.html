@@ -1,3 +1,4 @@
+{% raw %}
 <div ng-controller="mainTableCtrl">
     <h2>{{rows.length}} Running Instances{{plural(rows)}} <span ng-show="temp">?<small class="muted"><em > (only {{rows.length-1}} actually....)</em></small></span></h2>
     <form class="form-horizontal">
@@ -22,3 +23,4 @@
         </tr>
     </table>
 </div>
+{% endraw %}
