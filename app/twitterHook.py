@@ -1,6 +1,8 @@
 from TwitterAPI import TwitterAPI
 from app.adminConstants import AdminConstants
 
+SEARCH_TWEETS_REQUEST = 'search/tweets'
+
 
 class TwitterHook():
     def __init__(self):
@@ -15,7 +17,7 @@ class TwitterHook():
     def can_login(self):
         api = self.api
         try:
-            request = api.request('search/tweets', {'q': 'pizza'})
+            request = api.request(SEARCH_TWEETS_REQUEST, {'q': 'pizza'})
             if request.status_code == 200:
                 return True
         except:
@@ -24,12 +26,18 @@ class TwitterHook():
     def latest_tweets(self):
         api = self.api
         request = api.request('statuses/home_timeline', {'count': '200'})
-        tweets = []
-        for tweet in request:
-            tweets.append(tweet)
+        tweets = self.extract_tweets_from_response(request)
         return tweets
 
     def search_by_query(self, query):
         api = self.api
-        request = api.request()
-        return 1
+        response = api.request(SEARCH_TWEETS_REQUEST, {'q': query})
+        tweets = self.extract_tweets_from_response(response)
+        return tweets
+
+    @staticmethod
+    def extract_tweets_from_response(response):
+        tweets = []
+        for tweet in response:
+            tweets.append(tweet)
+        return tweets

@@ -21,7 +21,7 @@ class TwitterHookTests(unittest.TestCase):
         self.assertGreater(tweetcount, 0)
 
     def test_twitterhook_can_search_using_search_queries(self):
-        query = ''
+        query = 'pizza'
         tweets = self.twitterhook.search_by_query(query)
         tweetcount = len(tweets)
         self.assertGreater(tweetcount, 0)
