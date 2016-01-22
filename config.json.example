@@ -3,4 +3,5 @@
     "consumer-secret": "example",
     "access-key": "example",
     "access-secret": "secret"
+    "twitter-queries": '["query1","query2"]'
 }
