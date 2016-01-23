@@ -10,15 +10,23 @@
 <body>
 
 <navigation></navigation>
+
 <div ui-view></div>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container" display="inline-block;">
         <p class="text-muted" align="center">&copy; <a href="https://github.com/rosudrag">DRR</a> & <a href="https://github.com/cristwelrine">Cristwelrine</a></p>
     </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 <script src="/static/js/app.js"></script>
+<script src="/static/js/controllers/tableController.js"></script>
+<script src="/static/js/services/dataService.js"></script>
+<script src="/static/js/services/permissionService.js"></script>
+
+
+
 </body>
 </html>
