@@ -1,4 +1,4 @@
-from app.adminConstants import AdminConstants
+from app.freemiumwebapp.adminConstants import AdminConstants
 
 
 class TwitterCompetitionsBot:

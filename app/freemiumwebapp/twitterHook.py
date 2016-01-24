@@ -1,5 +1,5 @@
 from TwitterAPI import TwitterAPI
-from app.adminConstants import AdminConstants
+from app.freemiumwebapp.adminConstants import AdminConstants
 
 SEARCH_TWEETS_REQUEST = 'search/tweets'
 
