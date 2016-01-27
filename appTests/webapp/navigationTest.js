@@ -1,6 +1,5 @@
 describe('Unit testing navigation',function(){
     var $compile,$rootScope,$httpBackend,template;
-
     var element;
     beforeEach(module('freemium','templates'));
     beforeEach(inject(function(_$compile_,_$rootScope_,$templateCache){
