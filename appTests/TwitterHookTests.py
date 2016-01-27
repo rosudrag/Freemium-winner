@@ -1,5 +1,6 @@
 import unittest
-from app.twitterHook import TwitterHook
+
+from app.freemiumwebapp.twitterHook import TwitterHook
 
 
 # App integration tests

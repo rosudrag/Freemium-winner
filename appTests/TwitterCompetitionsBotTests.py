@@ -1,11 +1,11 @@
 import unittest
 from unittest.mock import call
 
-import mock
-
-from app.TwitterCompetitionsBot import TwitterCompetitionsBot
 from app.adminConstants import AdminConstants
 from app.twitterHook import TwitterHook
+
+import mock
+from app.freemiumwebapp.TwitterCompetitionsBot import TwitterCompetitionsBot
 
 
 class TwitterCompetitionsBotTests(unittest.TestCase):
