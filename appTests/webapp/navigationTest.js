@@ -14,6 +14,7 @@ describe('Unit testing navigation',function(){
         $rootScope.$digest();
     }));
 
+
     it('Should not be empty',function(){
         expect(element.html().not.toEqual(''));
     });
