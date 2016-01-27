@@ -1,0 +1,20 @@
+{
+  "name": "Freemium-Winner",
+  "description": "Automated winner of online competitions",
+  "main": "",
+  "authors": [
+    "cristwelrine <cristwelrine@yahoo.com>"
+  ],
+  "license": "GPL",
+  "homepage": "https://github.com/rosudrag/Freemium-winner",
+  "moduleType": [
+    "es6"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular-resource": "~1.4.9",
+    "angular-ui-router": "~0.2.17",
+    "angular-mocks": "~1.4.9",
+    "angular": "~1.4.9"
+  }
+}
