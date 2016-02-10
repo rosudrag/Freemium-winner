@@ -27,9 +27,3 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',function
                     $injector.get('$state').go('404',{},{location:false});
             });
 }]);
-
-app.directive('navigation',function(){
-    return{
-        templateUrl:'template/nav-bar.html'
-    };
-});

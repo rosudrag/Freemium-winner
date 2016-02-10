@@ -6,10 +6,6 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template("index.html")
 
-@app.route("/template/nav-bar.html")
-def nav():
-    return render_template("view/nav-bar.html")
-
 @app.route("/template/main.html")
 def main():
     return render_template("view/main.html")
