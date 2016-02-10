@@ -19,18 +19,19 @@ module.exports = function(config) {
             'bower_components/angular-mocks/angular-mocks.js',
             'bower_components/angular-resource/angular-resource.js',
             'bower_components/angular-ui-router/release/angular-ui-router.js',
-            'app/**/*.js',
+            'app/freemiumwebapp/static/**/*.js',
             'appTests/**/*.js',
-            'app/templates/**/*.html'
+            'app/freemiumwebapp/templates/**/*.html'
         ],
 
         preprocessors: {
-            'app/templates/**/*.html': 'ng-html2js'
+            'app/templates/**/*.html': ['ng-html2js']
         },
 
         ngHtml2JsPreprocessor: {
-            stripPrefix:'app/',
-            moduleName: 'templates'
+            stripPrefix:'.*/app/freemiumwebapp/templates/view/',
+            prependPrefix: 'template/',
+            moduleName: 'fuck'
         },
         // list of files to exclude
         exclude: [
@@ -45,7 +46,7 @@ module.exports = function(config) {
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
-            'karma-ng-html2js-preprocessor',
+            'karma-ng-html2js-preprocessor'
         ],
 
         // test results reporter to use
@@ -55,7 +56,7 @@ module.exports = function(config) {
 
 
         // web server port
-        port: 9876,
+        port: 9877,
 
 
         // enable / disable colors in the output (reporters and logs)
@@ -64,7 +65,7 @@ module.exports = function(config) {
 
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
 
         // enable / disable watching file and executing tests whenever any file changes

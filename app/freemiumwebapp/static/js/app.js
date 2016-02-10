@@ -8,7 +8,6 @@ app.run(['$rootScope',function ($rootScope) {
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',function ($stateProvider,$urlRouterProvider,$locationProvider) {
             $locationProvider.html5Mode(true);
-            $urlRouterProvider.otherwise('home');
             $stateProvider
                 .state("home", {
                     url: "/",
@@ -17,7 +16,16 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',function
                 .state("ceva", {
                     url: "/",
                     templateUrl: "template/ceva.html"
+                })
+                .state('404',{
+                    templateUrl:'template/404.html'
                 });
+            $urlRouterProvider
+                .when('','/home')
+                .when('/','/home')
+                .otherwise(function($injector){
+                    $injector.get('$state').go('404',{},{location:false});
+            });
 }]);
 
 app.directive('navigation',function(){
