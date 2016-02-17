@@ -4,3 +4,4 @@
 .sonar/
 node_modules/
 bower_components/
+virtualEnv*
